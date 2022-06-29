@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+:root {
+    --main-color: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    --grad-color: linear-gradient(to right, #0071bc, #f4822a);
+    --black: #244361;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-padding-top: 60px;
+}
+
+.navbar_bg {
+    background-image: linear-gradient( to right, #e3eeff 0%, #e3eeff 99%, #e3eeff 100%);
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 40px;
+}
+
+.navbar li a {
+    font-size: 1rem;
+    font-weight: 500 !important;
+    border-radius: 1.5rem .5rem;
+    margin-right: 8px;
+}
+
+.navbar li a.active {
+    background: var(--main-color);
+}
+
+.navbar li a:hover {
+    font-size: 1rem;
+    font-weight: normal;
+    background: var(--main-color);
+    border-radius: 1.5rem .5rem;
+}
+
+.navbar li a:hover {
+    color: var(--primary-color) !important;
+}
+
+.dropdown-menu {
+    background: linear-gradient( to right, #e3eeff 0%, #e3eeff 99%, #e3eeff 100%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.news-latter {
+    background-image: linear-gradient(to top, #d9e7f9 0%, #f3d5c2 100%);
+    height: 620px;
+}
+
+.news-latter img {
+    width: 100%;
+    height: 300px;
+}
+
+.card {
+    background-image: linear-gradient(to top, #d6e0f1 0%, #ece7e9 100%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 3.5px);
+    -webkit-backdrop-filter: blur( 3.5px);
+    border-radius: 2rem .3rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.card h2 {
+    color: rgb(94, 88, 88);
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.card .inputBox {
+    margin-top: 20px;
+}
+
+.card form textarea {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(253, 228, 228, 0.05);
+    height: 200px;
+    width: 100%;
+    margin-top: 35px;
+    color: #060707;
+}
+
+.card form textarea:focus {
+    background-image: linear-gradient(to top, #f3d5c2 0%, #e7f0fd 100%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 1.5px);
+    -webkit-backdrop-filter: blur( 1.5px);
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    color: #060707;
+}
+
+.card .inputBox input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(253, 228, 228, 0.05);
+}
+
+.card .inputBox select {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card .inputBox input:focus {
+    background-image: linear-gradient(to top, #f3d5c2 0%, #e7f0fd 100%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 18.5px);
+    -webkit-backdrop-filter: blur( 18.5px);
+    border-radius: 35px;
+    border: 1px solid rgba(70, 91, 94, 0.18);
+}
+
+.card .btn-login {
+    background: #F4822a;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 14px);
+    -webkit-backdrop-filter: blur( 14px);
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    color: #000;
+    width: 140px;
+    font-size: 16px;
+    margin-left: 10px;
+    height: 45px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.card .btn-login:hover {
+    background: #77A5F8;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.card .forget {
+    color: rgb(57, 58, 54);
+    font-size: 17px;
+    text-align: center;
+}
+
+.card .forget a {
+    color: rgb(9, 81, 90);
+    font-weight: 600;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.card .inputBox select option {
+    background: #f2eefc;
+}
